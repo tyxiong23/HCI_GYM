@@ -9,11 +9,12 @@
 ![gym1](doc/images/gym1.png)
 ![gym2](doc/images/gym1.png)
 
-演示视频见`doc/demo.mp4`, 也可在Bilibili上观看: https://www.bilibili.com/video/BV1444y177K9/
+[演示视频](doc/demo.mp4)见`doc/demo.mp4`, 也可在Bilibili上观看: https://www.bilibili.com/video/BV1444y177K9/ 
 
 
 
 ### 说明文档
+交互方式的说明文档可见 [文档](doc/文档.docx), 建议参考 [项目总结](doc/HCI_GYM项目总结.pdf)。以下为`文档`的内容截图。
 
 ![image-20211223123419896](doc/images/image-20211223123419896.png)
 
