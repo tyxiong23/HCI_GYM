@@ -1,0 +1,42 @@
+- F 居中显示选中对象
+- 基本变换：在左上角
+- 添加材质
+	- 新建材质
+	- 把材质拖动到对象上面
+- 关联
+	- 选中对象-Component-...
+	- rigidbody 添加物理效果 (刚体)
+- 获取同一物体上的其他组件
+	- 直接GetComponent
+	- 默认从当前物体上查找
+- 声明public
+- 子对象绑定
+	- 直接在树里面拖动过去
+- 基于父对象的工程管理方式
+	- 创建一个空的GameObject作为父对象
+	- **确保复位到原点**
+- 设置prefab
+	- 直接拖动，从树拖到资源里
+	- 对其中一个做改动时：选中以打开检视器-最上面prefab-overrides
+- UI
+	- UI对象在场景中的设置
+	- 在脚本中的使用：using UnityEngine.UI
+
+- 使用NUIX工具开发交互方式
+	- 工具
+		- 模型 NUIX/SDK/Extensions/Devices/Prefabs
+		- 传感器 NUIX/SDK/UX/Interactables/Prefabs
+		- 传感器 NUIX/SDK/UX/Prefabs
+	- 把prefab拖进场景，unpack，然后只留下自己想要的
+	- 把传感器加入到某个模型上面，这会成为一个组件
+	- 在设备对外展示的脚本里面设置一些作为行为依据的属性，以及对应这些属性的setter函数(public)，在传感器的Triggered()/Untriggered()中触发这些函数
+	- Contact Sensor
+		- 两个部分，已经关联好
+		- 设定离开的距离
+		- 分别给Triggered()/Untriggered()设置触发，逻辑是物体-属性-某个值或者物体-某个函数，注意函数需要是public，属性还不确定如何找到，可以用setter模式给一些属性做绑定
+	- Speech (语音识别)
+		- 可以任意设置单词
+		- 相同的方式设置触发动作
+	- 手和头
+		- 手：有一些函数，能拿到手的位置，稍后会做两个空物体始终绑定到手的位置，方便编写
+		- 头：应该有其他函数拿到位姿

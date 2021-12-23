@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/MRTK/Examples/Demos/HandTracking/Scenes/HandInteractionExamples.unity
+    guid: 3dd4a396b5225f8469b9a1eb608bfa57
+  - enabled: 1
+    path: Assets/NUIX-Studio-APP/Environments/Environments/School_Classroom.unity
+    guid: b64e7bfed3af07540960a741f9195d89
+  - enabled: 1
+    path: Assets/NUIX-Studio-APP/Environments/Environments/Main/Main.unity
+    guid: 0e1566cd2377bef448585de5dbb19a8e
+  - enabled: 1
+    path: Assets/NUIX-Studio-APP/Environments/Environments/Car.unity
+    guid: 0f1c030695b5b9447b00b22d503984f3
+  - enabled: 1
+    path: Assets/NUIX-Studio-APP/Environments/Environments/Living_Room.unity
+    guid: c68cfd30fe0314569a93fc344982880a
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: d1c26ba100bd54138a73e927bd40cc6d, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 1f0946c93843341e2878f695cef7dbf6, type: 2}
